@@ -38,7 +38,7 @@ class _Screen1State extends State<Screen1> {
         child: postMdl.loading
             ? const CircularProgressIndicator()
             : ListView.builder(
-                itemCount: postMdl.post1.length,
+                itemCount: postMdl.post.length,
                 itemBuilder: (context, i) {
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -53,7 +53,7 @@ class _Screen1State extends State<Screen1> {
                             height: 10.0,
                           ),
                           NormalText(
-                            text: postMdl.post1[i].id.toString(),
+                            text: postMdl.post[i].id.toString(),
                             size: 16,
                             color: ColorData.black,
                             weight: FontWeight.w500,
@@ -62,7 +62,7 @@ class _Screen1State extends State<Screen1> {
                             height: 10.0,
                           ),
                           NormalText(
-                            text: postMdl.post1[i].title,
+                            text: postMdl.post[i].title,
                             size: 16,
                             color: ColorData.black,
                             weight: FontWeight.w500,
